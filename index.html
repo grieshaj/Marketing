@@ -63,7 +63,6 @@
   </table>
   <div class="footer">WWT ATC Labs &amp; Learning · Thursday Morning Demos · 2026</div>
 </div>
-
 <script>
 const slots = [
   { date:"Thu, May 14, 2026", host:"Chad Bockert",          note:"One-time host",           kind:"chad"    },
@@ -94,15 +93,14 @@ const slots = [
   { date:"Thu, Nov 05, 2026", host:"Dan Catalano",           note:"",                        kind:"normal"  },
   { date:"Thu, Nov 12, 2026", host:"Kristin Casey",          note:"",                        kind:"normal"  },
   { date:"Thu, Nov 19, 2026", host:"Diane Deverey",          note:"",                        kind:"normal"  },
-  { date:"Thu, Nov 26, 2026", host:"Erica Hagen",            note:"",                        kind:"normal"  },
+  { date:"Thu, Nov 26, 2026", host:"— Holiday Break —",      note:"Thanksgiving Week",       kind:"holiday" },
   { date:"Thu, Dec 03, 2026", host:"Cari Wilber",            note:"",                        kind:"normal"  },
   { date:"Thu, Dec 10, 2026", host:"Emily Murphy-Barbina",   note:"",                        kind:"normal"  },
-  { date:"Thu, Dec 17, 2026", host:"Derrick Sprague",        note:"",                        kind:"normal"  },
+  { date:"Thu, Dec 17, 2026", host:"Erica Hagen",            note:"",                        kind:"normal"  },
 ];
 
 const tbody = document.getElementById("schedule");
 let lastMonth = "", rowNum = 0;
-
 slots.forEach(s => {
   const month = s.date.split(" ")[1] + " " + s.date.split(" ")[3];
   if (month !== lastMonth) {
